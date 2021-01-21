@@ -162,7 +162,7 @@ header main .images .worker-img1 {
 }
 header main .images .worker-img3 {
   top: 354px;
-  left: -38px;
+  left: 538px;
   animation: translate-img 3s linear 0.5s infinite alternate;
 }
 
@@ -173,4 +173,9 @@ header main .images .worker-img3 {
   100% {
     transform: translateY(12px);
   }
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 500px;
 }
