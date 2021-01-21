@@ -1,0 +1,176 @@
+:root {
+  --bg-color: rgb(55, 78, 182);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  max-width: 1180px;
+  min-height: inherit;
+  margin: 0 auto;
+  padding: 27px 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+header nav button,
+header nav input {
+  outline: none;
+  padding: 5px;
+}
+
+header nav h2 {
+  color: rgb(44, 44, 150);
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header nav li {
+  padding: 12px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.3s;
+}
+
+header nav li a:hover {
+  color: var(--bg-color);
+}
+
+header main {
+  display: flex;
+  height: 640px;
+}
+
+header main .text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 50%;
+  padding-top: 140px;
+  line-height: 1;
+}
+
+header main .text h1 {
+  font-size: 68px;
+  font-weight: 900;
+  font-family: 'Inter', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+header main .text p {
+  font-size: 18px;
+  color: rgb(82, 82, 82);
+}
+
+header main .text .sign-in {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: fit-content;
+}
+
+header main .text .sign-in a {
+  text-decoration: none;
+  background-color: rgb(44, 44, 150);
+  color: white;
+  border-radius: 5px;
+  padding: 16px;
+  font-size: 19px;
+  transition: all 0.3s;
+}
+
+header main .text .sign-in a:hover {
+  background-color: rgba(44, 44, 150, 0.815);
+}
+
+header main .text span {
+  font-size: 18px;
+}
+
+header main .text span i {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+header main .images {
+  position: relative;
+  width: 50%;
+}
+
+header main .images img {
+  position: absolute;
+}
+
+header main .images .computer {
+  width: 584px;
+  top: 170px;
+  z-index: 1;
+}
+
+header main .images .half-circle {
+  width: 150px;
+  top: 84px;
+  left: 54px;
+}
+
+header main .images .dots-circle {
+  width: 180px;
+  top: 114px;
+  left: 115px;
+}
+
+header main .images .dots-circle2 {
+  top: 434px;
+  left: 365px;
+}
+
+header main .images .worker-img2 {
+  top: 64px;
+  left: -80px;
+  animation: translate-img 3s linear infinite alternate;
+}
+header main .images .worker-img1 {
+  top: 54px;
+  left: 495px;
+  animation: translate-img 3s linear 1s infinite alternate;
+}
+header main .images .worker-img3 {
+  top: 354px;
+  left: -38px;
+  animation: translate-img 3s linear 0.5s infinite alternate;
+}
+
+@keyframes translate-img {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(12px);
+  }
+}
