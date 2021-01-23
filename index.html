@@ -41,10 +41,25 @@
             <li><a href="#">GALLERY</a></li>
             <li><a href="#">CONTACT US</a></li>
           </ul>
-          <form>
-            <input type="search" placeholder="search" />
-            <button><i class="fas fa-search"></i></button>
-          </form>
+          <div class="dropdown show">
+            <a
+              class="btn btn-secondary dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
         </nav>
         <main>
           <div class="text">
@@ -108,37 +123,58 @@
       </div>
     </header>
 
-    <!-- <div class="container mt-3"> -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ul>
+    <div class="container mt-3 w-50">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
 
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/blue-car.png" alt="Los Angeles" />
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://images.unsplash.com/photo-1502877338535-766e1452684a?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8Y2FyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60"
+              alt="Los Angeles"
+            />
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60"
+              alt="Chicago"
+            />
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTh8fGNhcnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=60"
+              alt="New York"
+            />
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="images/car-2.png" alt="Chicago" />
-        </div>
-        <div class="carousel-item">
-          <img src="images/צילום מסך 2021-01-21 171924.png" alt="New York" />
-        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
       </div>
-
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
     </div>
-    <!-- </div> -->
 
     <div class="container">
       <h2>Card Image</h2>
@@ -192,103 +228,144 @@
             <a href="#" class="btn btn-primary">See Profile</a>
           </div>
         </div>
-        <div class="card" style="width: 330px">
-          <img
-            class="card-img-top"
-            src="https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fHBlb3BsZXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt="Card image"
-            style="width: 100%"
-          />
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
-            </p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-wrap justify-content-around">
+      <div class="card text-white bg-warning mb-3" style="max-width: 28rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Primary card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="card" style="width: 330px">
-          <img
-            class="card-img-top"
-            src="https://images.unsplash.com/photo-1446511437394-36cdff3ae1b3?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBlb3BsZXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt="Card image"
-            style="width: 100%"
-          />
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
-            </p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
+      </div>
+      <div class="card text-white bg-warning mb-3" style="max-width: 28rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Secondary card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="card" style="width: 330px">
-          <img
-            class="card-img-top"
-            src="https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjl8fHBlb3BsZXxlbnwwfDB8MHw%3D&auto=format&fit=crop&w=500&q=60"
-            alt="Card image"
-            style="width: 100%"
-          />
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
-            </p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
+      </div>
+      <div class="card text-white bg-warning mb-3" style="max-width: 28rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="card" style="width: 330px">
-          <img
-            class="card-img-top"
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt="Card image"
-            style="width: 100%"
-          />
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
-            </p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
+      </div>
+      <div class="card text-white bg-warning mb-3" style="max-width: 28rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Danger card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="card" style="width: 330px">
-          <img
-            class="card-img-top"
-            src="https://images.unsplash.com/photo-1487573884658-a5d3c667584e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDN8fHBlb3BsZXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt="Card image"
-            style="width: 100%"
-          />
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
-            </p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
+      </div>
+      <div class="card text-white bg-warning mb-3" style="max-width: 28rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Warning card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
-        <div class="card" style="width: 330px">
-          <img
-            class="card-img-top"
-            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            alt="Card image"
-            style="width: 100%"
-          />
-          <div class="card-body">
-            <h4 class="card-title">John Doe</h4>
-            <p class="card-text">
-              Some example text some example text. John Doe is an architect and
-              engineer
-            </p>
-            <a href="#" class="btn btn-primary">See Profile</a>
-          </div>
+      </div>
+      <div class="card text-white bg-warning mb-3" style="max-width: 28rem">
+        <div class="card-header">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">Info card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
         </div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-center text-lg-start text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Footer Content</h5>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              atque ea quis molestias. Fugiat pariatur maxime quis culpa
+              corporis vitae repudiandae aliquam voluptatem veniam, est atque
+              cumque eum delectus sint!
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Links</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Links</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-white">Link 1</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 2</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 3</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Link 4</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Yuda Bayana</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
   </body>
 </html>
