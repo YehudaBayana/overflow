@@ -175,7 +175,123 @@ header main .images .worker-img3 {
   }
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: 500px;
+.hamburger-container {
+  width: 35px;
+  height: 33px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  transition: all 1s;
+}
+
+.hamburger::before {
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(44, 44, 150);
+  transition: all 1s linear;
+  content: '';
+}
+.hamburger:nth-child(1)::before {
+  top: 0px;
+  width: 23px;
+  left: 3px;
+}
+.hamburger:nth-child(2)::before {
+  top: 10px;
+}
+.hamburger:nth-child(3)::before {
+  top: 20px;
+  width: 23px;
+  left: 3px;
+}
+.hamburger-container:hover .hamburger::before {
+  width: 30px;
+  left: 0;
+}
+
+.exit-hamburger-container-absolute {
+  position: absolute;
+  top: 60px;
+  right: 220px;
+  cursor: pointer;
+}
+.exit-hamburger-container {
+  width: 35px;
+  height: 33px;
+  position: relative;
+  cursor: pointer;
+}
+
+.exit-hamburger {
+  width: 35px;
+  height: 33px;
+  position: absolute;
+  transition: all 1s;
+}
+
+.exit-hamburger::before {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 4px;
+  background-color: rgb(44, 44, 150);
+  transition: all 1s linear;
+  content: '';
+}
+.exit-hamburger:nth-child(1)::before {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+.exit-hamburger:nth-child(2)::before {
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.exit-hamburger-container:hover .exit-hamburger {
+  transform: rotate(90deg);
+}
+
+.hamburger-fullnav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -1520px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(226, 226, 226);
+  z-index: 99;
+  transition: all 1s ease;
+}
+
+header nav .hamburger-fullnav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header nav .hamburger-fullnav li {
+  padding: 12px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+header nav .hamburger-fullnav li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+}
+
+header nav .hamburger-fullnav li a:hover {
+  color: var(--bg-color);
 }
